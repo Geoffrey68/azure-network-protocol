@@ -32,10 +32,13 @@ Download Wireshark and observe all traffic
 <p>
 <img src="https://i.imgur.com/yLBRiHL.png"/>
 <p>
+  </p>
+  
 From VM-1 using Powershell, ping VM-2's private IP address and observe ICMP traffic in Wireshark
 <p>
 <img src="https://i.imgur.com/ZZU8Zqc.png"/>
 <p>
+  
 Initiate a perpetual/non-stop ping from your Windows 10 VM-1 to your Ubuntu VM-2
 <p>
 <img src="https://i.imgur.com/kSfZBz8.png"/>
@@ -44,10 +47,12 @@ Open the Network Security Group your Ubuntu VM-2 is using and disable incoming (
 <p>
 <img src="https://i.imgur.com/SiChTTw.png"/>
 <p>
-Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity
+Back in the Windows 10 VM-1, observe the ICMP traffic in WireShark and the command line Ping activity
 <p>
-<imp src="https://i.imgur.com/nWveNMw.png"/>
+  
+  <img src="https://i.imgur.com/nWveNMw.png"/>
 <p>
+  
 Re-enable ICMP traffic for the Network Security Group your Ubuntu VM-2 is using
 <p>
 <img src="https://i.imgur.com/xG6xuWk.png"/>
@@ -56,7 +61,13 @@ Back in the Windows 10 VM-1, observe the ICMP traffic in WireShark
 <p>
 <img src="https://i.imgur.com/p0tpFCS.png"/>
 <p>
-- Step 3
+- Back in Wireshark, filter for DHCP traffic only
+  <p>
+From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
+    <p>
+Observe the DHCP traffic appearing in WireShark
+      <p>
+
 - Step 4
 
 <h2>Actions and Observations</h2>
