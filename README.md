@@ -61,6 +61,23 @@ Back in the Windows 10 VM-1, observe the ICMP traffic in WireShark
 <p>
 <img src="https://i.imgur.com/p0tpFCS.png"/>
 <p>
+  Back in Wireshark, filter for SSH traffic only
+  <p>
+    
+From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
+    <p>
+      
+      <img src="https://i.imgur.com/txU8PbF.png"/>
+      <p>
+        
+      
+Type commands into the linux SSH connection and observe SSH traffic spam in WireShark
+<p>
+  <img src="https://i.imgur.com/YxsroUL.png"/>
+  <p>
+    
+  
+  
 - Back in Wireshark, filter for DHCP traffic only
   <p>
 From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
