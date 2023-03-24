@@ -84,6 +84,9 @@ From your Windows 10 VM, attempt to issue your VM a new IP address from the comm
     <p>
 Observe the DHCP traffic appearing in WireShark
       <p>
+        <img src="https://i.imgur.com/cBCltsA.png"/>
+        <p>
+          
 
 - Step 4
 
